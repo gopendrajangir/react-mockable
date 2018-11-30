@@ -1,0 +1,163 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 62.5%;   
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.login {
+  
+  &-form {
+
+    .login-container {
+      width: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid #ced6e0;
+      border-radius: 5px;
+      padding: 3.5rem 0rem;
+  
+      .list-error {
+        font-family: sans-serif;
+        padding: 1rem 2rem;
+        width: 80%;
+        font-size: 1.8rem;
+        color: white;
+        border-radius: 4px;
+        opacity: .7;
+        background-color: #ff3031;
+        margin-bottom: 1.5rem;
+      }
+
+      #username, #password {
+        font-family: sans-serif;
+        padding: .8rem;
+        width: 80%;
+        font-size: 1.6rem;
+        margin: 1.5rem auto;
+        border: none;
+        border: 1px solid #ced6e0;
+        border-radius: 2px;
+        outline: none;
+      }
+      
+      input::placeholder {
+        color: #747d8c;
+      }
+  
+      .login-btn {
+        padding: .7rem;
+        font-size: 1.8rem;
+        width: 10rem;
+        margin-top: 1.5rem;
+        background-color: #5352ed;
+        border: none;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        font-family: sans-serif;
+        color: #fff;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.books {
+  &-container {
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 5rem;
+  }
+
+  &-list {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &-item {
+      margin: 0px;
+      width: 100%;
+      height: auto;
+      font-size: 1.6rem;
+      padding: .5rem 2rem;
+      color: #7f8c8d;
+      cursor: pointer;
+      border: 1px solid #ecf0f1;      
+      border-top: none;
+      &:first-child {
+        border-top: 1px solid #ecf0f1;      
+      }
+    }
+  }
+
+  &-view {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .book-detail {
+      margin: 0px;
+      padding: 0px;
+      height: 80%;
+      width: 80%;
+      background-color:#ecf0f1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+}
+
+.fetch-error {
+  font-size: 1.6rem;
+  color:red;
+}
+
+.fetch-message {
+  text-align: center;
+  font-size: 1.8rem;
+  color: blue;
+}
